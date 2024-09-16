@@ -1,101 +1,59 @@
-import Image from "next/image";
+import { Fragment } from "react";
+import Link from "next/link";
+
+import ProductCard from "./components/ProductCard";
+
+import products from "./products";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <Fragment>
+      <div className="container h-60 md:h-80 flex justify-center flex-col gap-6 md:gap-10 items-center">
+        <h1 className="text-3xl md:text-6xl text-center font-extrabold text-secondary">Discover the Perfect Hand Tool for Every Job</h1>
+        <h2 className="text-lg md:text-3xl text-center font-extralight">Explore our wide range of hand tools designed to meet your specific needs</h2>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="text-center">
+
+      </div>
+
+      <div className="bg-secondary text-white py-4 shadow-lg">
+        <div className="container flex flex-col justify-center items-center">
+          <h1 className="text-center text-4xl font-bold">Our Products</h1>
+          <div className="flex flex-row gap-8 px-4 py-8 max-w-full overflow-x-scroll">
+            { products.map(product => (<ProductCard key={product.slug} product={product} />)) }
+          </div>
+          <Link className="bg-primary text-black py-2 px-8 rounded-full font-bold text-lg mt-4" href="/">View All</Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </div>
+      
+      <div className="container py-8 text-center">
+        <h1 className="text-4xl font-bold">About US</h1>
+        <p className="mt-4 text-lg">Welcome to SAMO Hand Tools, your trusted partner in high-quality hand tools, proudly based in Jalandhar, Punjab, India. With a steadfast commitment to excellence, we specialize in the 100% export of premium hand tools, catering to a global clientele with precision and reliability. Our mission is to provide tools that not only meet but exceed the expectations of our customers worldwide.</p>
+
+        <h2 className="text-4xl mt-8 font-bold">Why Choose US</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-8">
+          <div>
+            <h2 className="font-bold">Uncompromising Quality</h2>
+            <p className="text-lg mt-2">We ensure the highest standards of quality in every tool we produce, from the initial design to the final product.</p>
+          </div>
+
+          <div>
+            <h2 className="font-bold">Global Expertise</h2>
+            <p className="text-lg mt-2">With a focus on 100% exports, our tools are trusted by professionals around the world.</p>
+          </div>
+
+          <div>
+            <h2 className="font-bold">Customer-Centric Approach</h2>
+            <p className="text-lg mt-2">We prioritize our customers’ needs, offering exceptional service and support to build lasting relationships.</p>
+          </div>
+
+          <div>
+            <h2 className="font-bold">Reliability and Trust</h2>
+            <p className="text-lg mt-2">We stand by the reliability of our tools, ensuring they perform consistently in all conditions.</p>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  )
 }
