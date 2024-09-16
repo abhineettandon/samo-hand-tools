@@ -21,7 +21,7 @@ export default function Header() {
         <header className="w-full h-20 bg-white shadow-sm">
             <nav className="container h-full flex justify-between items-center">
                 <Link href="/">
-                    <Image src="/logo.png" alt="logo" width={72} height={72} priority={true} />
+                    <Image src="/img/logo.png" alt="logo" width={72} height={72} priority={true} />
                 </Link>
 
                 <div className="hidden md:flex gap-2">
