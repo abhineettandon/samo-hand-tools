@@ -5,7 +5,6 @@ import ProductCard from "./_components/ProductCard";
 import Hero from "./_components/sections/Hero";
 
 import products from "./products";
-import WhyChooseUs from "./_components/sections/WhyChooseUs";
 
 export default function Home() {
   return (
