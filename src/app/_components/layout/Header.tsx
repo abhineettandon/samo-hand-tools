@@ -23,7 +23,7 @@ export default function Header() {
     const pathname = usePathname();
 
     function getLinkClasses(href: string) {
-        const baseClasses = "px-8 py-2 rounded transition ease-in duration-100 text-black";
+        const baseClasses = "px-8 py-2 rounded transition ease-in duration-100";
 
         if (pathname === href) {
             return `${baseClasses} bg-secondary text-white`
