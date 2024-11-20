@@ -23,15 +23,13 @@ export default function Header() {
     const pathname = usePathname();
 
     function getLinkClasses(href: string) {
-        let classes = "px-8 py-2 rounded transition ease-in duration-100 text-black";
+        const baseClasses = "px-8 py-2 rounded transition ease-in duration-100 text-black";
 
         if (pathname === href) {
-            classes = classes+" bg-secondary text-white"
-        } else {
-            classes = classes+" hover:bg-secondary hover:text-white"
+            return `${baseClasses} bg-secondary text-white`
         }
 
-        return classes;
+        return `${baseClasses} hover:bg-secondary hover:text-white`
     }
 
     return (

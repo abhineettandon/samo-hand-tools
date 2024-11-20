@@ -2,6 +2,7 @@ import { Fragment } from "react";
 
 import Hero from "../_components/sections/Hero";
 import WhyChooseUs from "../_components/sections/WhyChooseUs";
+import Factsheet from "../_components/sections/Factsheet/Factsheet";
 
 export default function About() {
     return (
@@ -14,7 +15,13 @@ export default function About() {
                 </div>
             </div>
 
-            <WhyChooseUs />
+            <div className="container">
+                <Factsheet />
+            </div>
+
+            <div className="container">
+                <WhyChooseUs />
+            </div>
         </Fragment>
     )
 }

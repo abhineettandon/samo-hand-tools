@@ -30,7 +30,11 @@ export default function Home() {
         <p className="mt-4 text-lg">Welcome to SAMO Hand Tools, your trusted partner in high-quality hand tools, proudly based in Jalandhar, Punjab, India. With a steadfast commitment to excellence, we specialize in the 100% export of premium hand tools, catering to a global clientele with precision and reliability. Our mission is to provide tools that not only meet but exceed the expectations of our customers worldwide.</p>
       </div>
 
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
+
+      <div className="text-center my-8">
+        <Link className="bg-secondary text-white py-2 px-8 rounded-full font-bold text-lg mt-4" href="/">Show All Products</Link>
+      </div>
     </Fragment>
   )
 }
