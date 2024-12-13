@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import Hero from "../_components/sections/Hero";
+import Hero from "../_components/Hero";
 
 export default function Contact() {
     return (

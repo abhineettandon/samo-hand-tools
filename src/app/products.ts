@@ -8,133 +8,133 @@ const products: Product[] = [
         varients: [
             {
                 name: 'SM-101 Straight Slasher',
-                img: '',
+                img: '/img/products/slashers.jpg',
                 description: "Carbon Steel Blade, Hardened and Tempered, with Ashwood/ Hickory Handle",
                 specs: [
                     {
-                        key: 'Blade Thickness',
+                        label: 'Blade Thickness',
                         value: '6mm'
                     },
                     {
-                        key: 'Handle Length',
+                        label: 'Handle Length',
                         value: '760mm'
                     },
                     {
-                        key: 'Qty./Bag/Pcs.',
+                        label: 'Qty./Bag/Pcs.',
                         value: '12'
                     }
                 ]
             },
             {
                 name: "SM-102 'D' Type Slasher",
-                img: '',
+                img: '/img/products/slashers.jpg',
                 description: "Carbon Steel Blade, Hardened and Tempered, with Ashwood/ Hickory Handle",
                 specs: [
                     {
-                        key: 'Blade Thickness',
+                        label: 'Blade Thickness',
                         value: '5mm'
                     },
                     {
-                        key: 'Handle Length',
+                        label: 'Handle Length',
                         value: '760mm'
                     },
                     {
-                        key: 'Qty./Bag/Pcs.',
+                        label: 'Qty./Bag/Pcs.',
                         value: '12'
                     }
                 ] 
             },
             {
                 name: "SM-103 Irish Slasher Long Head",
-                img: '',
+                img: '/img/products/slashers.jpg',
                 description: "Carbon Steel Blade, Hardened and Tempered, with Ashwood/ Hickory Handle",
                 specs: [
                     {
-                        key: 'Blade Thickness',
+                        label: 'Blade Thickness',
                         value: '5mm'
                     },
                     {
-                        key: 'Handle Length',
+                        label: 'Handle Length',
                         value: '760mm'
                     },
                     {
-                        key: 'Qty./Bag/Pcs.',
+                        label: 'Qty./Bag/Pcs.',
                         value: '12'
                     }
                 ] 
             },
             {
                 name: "SM-104 Irish Slasher Short Head",
-                img: '',
+                img: '/img/products/slashers.jpg',
                 description: "Carbon Steel Blade, Hardened and Tempered, with Ashwood/ Hickory Handle",
                 specs: [
                     {
-                        key: 'Blade Thickness',
+                        label: 'Blade Thickness',
                         value: '5mm'
                     },
                     {
-                        key: 'Handle Length',
+                        label: 'Handle Length',
                         value: '760mm'
                     },
                     {
-                        key: 'Qty./Bag/Pcs.',
+                        label: 'Qty./Bag/Pcs.',
                         value: '12'
                     }
                 ] 
             },
             {
                 name: "SM-105 'D' Type Slasher",
-                img: '',
+                img: '/img/products/slashers.jpg',
                 description: "Carbon Steel Blade, Hardened and Tempered, with Ashwood/ Hickory Handle",
                 specs: [
                     {
-                        key: 'Blade Thickness',
+                        label: 'Blade Thickness',
                         value: '5mm'
                     },
                     {
-                        key: 'Handle Length',
+                        label: 'Handle Length',
                         value: '760mm'
                     },
                     {
-                        key: 'Qty./Bag/Pcs.',
+                        label: 'Qty./Bag/Pcs.',
                         value: '12'
                     }
                 ] 
             },
             {
                 name: "SM-106 Dunse Slasher",
-                img: '',
+                img: '/img/products/slashers.jpg',
                 description: "Carbon Steel Blade, Hardened and Tempered, with Ashwood/ Hickory Handle",
                 specs: [
                     {
-                        key: 'Blade Thickness',
+                        label: 'Blade Thickness',
                         value: '5mm'
                     },
                     {
-                        key: 'Handle Length',
+                        label: 'Handle Length',
                         value: '760mm'
                     },
                     {
-                        key: 'Qty./Bag/Pcs.',
+                        label: 'Qty./Bag/Pcs.',
                         value: '12'
                     }
                 ] 
             },
             {
                 name: "SM-107 Dunse Slasher Double Edge",
-                img: '',
+                img: '/img/products/slashers.jpg',
                 description: "Carbon Steel Blade, Hardened and Tempered, with Ashwood/ Hickory Handle",
                 specs: [
                     {
-                        key: 'Blade Thickness',
+                        label: 'Blade Thickness',
                         value: '5mm'
                     },
                     {
-                        key: 'Handle Length',
+                        label: 'Handle Length',
                         value: '760mm'
                     },
                     {
-                        key: 'Qty./Bag/Pcs.',
+                        label: 'Qty./Bag/Pcs.',
                         value: '12'
                     }
                 ] 

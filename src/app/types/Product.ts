@@ -5,7 +5,7 @@ export interface Product {
     varients: ProductVariant[]
 }
 
-interface ProductVariant {
+export interface ProductVariant {
     name: string
     img: string
     description: string
@@ -13,6 +13,6 @@ interface ProductVariant {
 }
 
 interface ProductSpec {
-    key: string
+    label: string
     value: string
 }

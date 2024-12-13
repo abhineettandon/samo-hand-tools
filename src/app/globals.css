@@ -13,11 +13,12 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.5;
+  background-color: #f9fafb;
   background-image: radial-gradient(#ddd 1px, transparent 0),
     radial-gradient(#ddd 1px, transparent 0);
   background-position: 0 0, 25px 25px;
   background-attachment: fixed;
   background-size: 50px 50px;
   overflow-x: hidden;
-  color: #0E2E45;
+  color: #0e2e45;
 }

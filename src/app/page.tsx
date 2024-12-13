@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import Link from "next/link";
 
-import ProductCard from "./_components/ProductCard";
-import Hero from "./_components/sections/Hero";
+import ProductThumbnail from "./_components/ProductThumbnail";
+import Hero from "./_components/Hero";
 
 import products from "./products";
 
@@ -18,9 +18,9 @@ export default function Home() {
         <div className="container flex flex-col justify-center items-center">
           <h1 className="text-center text-4xl font-bold">Our Products</h1>
           <div className="flex flex-row gap-8 py-8 max-w-full overflow-x-scroll">
-            { products.map(product => (<ProductCard key={product.slug} product={product} />)) }
+            { products.map(product => (<ProductThumbnail key={product.slug} product={product} />)) }
           </div>
-          <Link className="bg-primary text-black py-2 px-8 rounded-full font-bold text-lg mt-4" href="/">View All Prodcuts</Link>
+          <Link className="bg-primary text-black py-2 px-8 rounded-full font-bold text-lg mt-4" href="/products">View All Prodcuts</Link>
         </div>
       </div>
       

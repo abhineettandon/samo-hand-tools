@@ -1,4 +1,4 @@
-import Table, { TableData } from "../../Table"
+import Table, { TableData } from "../Table"
 
 export default function PaymentAndShipmentTable() {
     const data: TableData[] = [

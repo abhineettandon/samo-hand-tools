@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 
-import Hero from "../_components/sections/Hero";
-import WhyChooseUs from "../_components/sections/WhyChooseUs";
-import Factsheet from "../_components/sections/Factsheet/Factsheet";
+import Hero from "../_components/Hero";
+import WhyChooseUs from "../_components/WhyChooseUs";
+import Factsheet from "../_components/Factsheet/Factsheet";
 
 export default function About() {
     return (

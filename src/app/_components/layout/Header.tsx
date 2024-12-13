@@ -25,7 +25,7 @@ export default function Header() {
     function getLinkClasses(href: string) {
         const baseClasses = "px-8 py-2 rounded transition ease-in duration-100";
 
-        if (pathname === href) {
+        if (pathname.includes(href)) {
             return `${baseClasses} bg-secondary text-white`
         }
 
@@ -42,13 +42,13 @@ export default function Header() {
                 <div className="hidden md:flex gap-2">
                     {
                         links.map((link, i) => (
-                            <a
+                            <Link
                                 key={i}
                                 href={link.href}
                                 className={getLinkClasses(link.href)}
                             >
                                     {link.title}
-                            </a>
+                            </Link>
                         ))
                     }
                 </div>
