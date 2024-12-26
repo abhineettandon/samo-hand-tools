@@ -16,7 +16,7 @@ export default function ProductDetailsCard({ product }: Props) {
             <div className="flex flex-col">
                 <div className="border-4 p-2 rounded-lg">
                     <div className="w-full h-60 relative">
-                        <Image src={product.img} alt={product.name} fill={true} style={{objectFit: 'contain'}} />
+                        <Image className="object-contain" src={product.img} alt={product.name} fill={true} />
                     </div>
                 </div>
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 import ProductThumbnail from "./_components/ProductThumbnail";
 import Hero from "./_components/Hero";
 
-import products from "./products";
+import products from "./_products";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <div className="bg-secondary text-white py-4 shadow-lg">
         <div className="container flex flex-col justify-center items-center">
           <h1 className="text-center text-4xl font-bold">Our Products</h1>
-          <div className="flex flex-row gap-8 py-8 max-w-full overflow-x-scroll">
+          <div className="flex gap-4 max-w-full overflow-x-auto my-8 pb-4">
             { products.map(product => (<ProductThumbnail key={product.slug} product={product} />)) }
           </div>
           <Link className="bg-primary text-black py-2 px-8 rounded-full font-bold text-lg mt-4" href="/products">View All Prodcuts</Link>

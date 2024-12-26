@@ -24,8 +24,8 @@ export default function Table({ heading = '', data }: TableProps) {
             <tbody>
                 { data.map((d, i) => (
                     <tr key={i}>
-                        <td className="p-2 border-2" width="50%">{ d.label }</td>
-                        <td className="p-2 border-2">{ d.value }</td>
+                        <td className="p-2 border-2 font-semibold" width="50%">{ d.label }</td>
+                        <td className="p-2 border-2 font-semibold">{ d.value }</td>
                     </tr>
                 )) }
             </tbody>

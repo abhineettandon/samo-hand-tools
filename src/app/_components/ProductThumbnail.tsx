@@ -1,15 +1,30 @@
+'use client';
+
 import Image from "next/image"
-import Link from "next/link"
+import { useRouter } from "next/navigation";
 
 import type { Product } from "../types/Product"
 
-export default function ProductThumbnail({ product }: { product: Product }) {
+type Props = {
+    product: Product,
+    small?: boolean
+}
+
+export default function ProductThumbnail({ product, small = false }:Props) {
+    const router = useRouter()
+
+    function handleClick(product: Product) {
+        router.push(`/products/${product.slug}`)
+    }
+
     return (
-        <Link href={`/products/${product.slug}`} className="flex flex-col justify-between p-4 bg-white rounded-3xl hover:cursor-pointer hover:scale-105 transition ease-in duration-75">
-            <div className="w-56 h-60 relative">
-                <Image src={product.img} alt={product.slug} fill={true} style={{objectFit: 'contain'}} />
+        <div className="text-center cursor-pointer" onClick={() => handleClick(product)}>
+            <div className={`flex justify-center items-center bg-white rounded-full border-4 mb-4 ${small ? 'w-28 h-28' : 'w-52 h-52'}`}>
+                <div className={`relative ${small ? 'w-16 h-16' : 'w-36 h-36'}`}>
+                    <Image className="object-contain" src={product.img} alt={product.slug} fill={true} />
+                </div>
             </div>
-            <span className="font-bold text-xl mt-6 text-secondary">{product.name}</span>
-        </Link>
+            <span className={`font-semibold break-normal ${small ? 'text-base' : 'text-xl'}`}>{product.name}</span>
+        </div>
     )
 }
