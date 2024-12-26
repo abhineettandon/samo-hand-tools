@@ -8,7 +8,6 @@ import ProductDetailsCard from "../../_components/ProductDetailsCard";
 
 import type { Product } from "../../types/Product"
 import products from "../../_products"
-import ProductThumbnail from "@/app/_components/ProductThumbnail";
 
 type Params = {
     slug: string
