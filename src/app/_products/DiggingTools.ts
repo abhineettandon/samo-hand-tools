@@ -3,7 +3,7 @@ import type { Product } from "../types/Product";
 export const diggingTools: Product =     {
     name: 'Digging Tools',
     slug: 'digging-tools',
-    img: '/img/products/digging-tools/digging-tools.jpg',
+    img: '/img/products/digging-tools/digging-tools.png',
     varients: [
         {
             name: "SM-114 Digging Spade - Wooden Handle",

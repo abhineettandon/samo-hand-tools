@@ -3,7 +3,7 @@ import type { Product } from "../types/Product";
 export const hoes: Product ={
     name: 'Hoes',
     slug: 'hoes',
-    img: '/img/products/hoes/hoes.jpg',
+    img: '/img/products/hoes/hoes.png',
     varients: [
         {
             name: 'SM-161 Hoe 3 Lbs.',

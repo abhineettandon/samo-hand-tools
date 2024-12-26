@@ -3,7 +3,7 @@ import type { Product } from "../types/Product";
 export const rakes: Product =     {
     name: 'Rakes',
     slug: 'rakes',
-    img: '/img/products/rakes/rakes.jpg',
+    img: '/img/products/rakes/rakes.png',
     varients: [
         {
             name: 'SM-148 Leaf Rake',

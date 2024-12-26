@@ -3,7 +3,7 @@ import type { Product } from "../types/Product";
 export const billHooks: Product = {
     name: 'Bill Hooks',
     slug: 'bill-hooks',
-    img: '/img/products/bill-hooks/bill-hooks.jpg',
+    img: '/img/products/bill-hooks/bill-hooks.png',
     varients: [
         {
             name: 'SM-108 Sugar Cane Knife',

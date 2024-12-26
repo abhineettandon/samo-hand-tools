@@ -3,7 +3,7 @@ import type { Product } from "../types/Product";
 export const slashers: Product =     {
     name: 'Slashers',
     slug: 'slashers',
-    img: '/img/products/slashers/slashers.jpg',
+    img: '/img/products/slashers/slashers.png',
     varients: [
         {
             name: 'SM-101 Straight Slasher',

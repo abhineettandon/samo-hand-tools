@@ -3,7 +3,7 @@ import type { Product } from "../types/Product";
 export const scrapers: Product = {
     name: 'Scrapers',
     slug: 'scrapers',
-    img: '/img/products/scrappers/scrapers.jpg',
+    img: '/img/products/scrappers/scrapers.png',
     varients: [
         {
             name: 'SM-179 Curved Yard Scraper',
