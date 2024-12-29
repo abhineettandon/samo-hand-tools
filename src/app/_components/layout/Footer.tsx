@@ -1,18 +1,19 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FaLocationDot, FaPhone } from 'react-icons/fa6'
+import { FaEnvelope, FaLocationDot, FaPhone } from 'react-icons/fa6'
 
 export default function Footer() {
     return (
-        <footer className="bg-primary mt-8">
-            <div className="container grid grid-cols-1 md:grid-cols-4 p-8 gap-8 text-center">
-                <div className="flex justify-center">
-                    <Image src="/img/logo.png" alt="logo" style={{objectFit: 'contain'}} width={150} height={150} quality={80} priority={true} />
+        <footer className="bg-primary mt-8 w-full">
+            <div className="container py-16 flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start gap-8">
+                <div className="relative w-36 h-32 place-self-center">
+                    <Image src="/img/logo.png" alt="logo" fill={true} />
                 </div>
                 
-                <div className="flex flex-col gap-4 w-full">
+                <div className="flex flex-col gap-4 text-center sm:text-left">
                     <h4 className="text-lg font-bold">Contact Us</h4>
-                    <div className="flex items-center self-center gap-4">
+                    
+                    <div className="flex gap-4 items-center">
                         <FaLocationDot size={22} />
                         <div className="text-left">
                             <p>SAMO Hand Tools</p>
@@ -21,16 +22,21 @@ export default function Footer() {
                             <p>Punjab</p>
                         </div>
                     </div>
-                    <div className="flex items-center self-center gap-4 mr-12">
+                    
+                    <div className="flex gap-4 items-center">
                         <FaPhone size={20} />
+                        <a href="tel:+91 94652 52993" className="hover:underline">+91 94652 52993</a>
+                    </div>
+                    
+                    <div className="flex gap-4 items-center">
+                        <FaEnvelope size={22} />
                         <div className="text-left">
-                            <p>Call Us</p>
-                            <a href="tel:+91 94652 52993" className="hover:underline">+91 94652 52993</a>
+                            <a href="mailto:contact@samohandtools.com">contact@samohantools.com</a>
                         </div>
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-4 w-full">
+                <div className="flex flex-col gap-4 text-center">
                     <h4 className="text-lg font-bold">Products</h4>
                     <div className="flex flex-col gap-1">
                         <Link href="/products" className="hover:underline">Combination Spanners</Link>
@@ -43,15 +49,18 @@ export default function Footer() {
                     </div>
                 </div>
                 
-                <div className="flex flex-col gap-4 w-full">
+                <div className="flex flex-col gap-4 text-center">
                     <h4 className="text-lg font-bold">Useful Links</h4>
                     <div className="flex flex-col gap-1">
                         <Link href="/" className="hover:underline">Home</Link>
                         <Link href="/about" className="hover:underline">About</Link>
                         <Link href="/" className="hover:underline">Products</Link>
-                        <Link href="/contact" className="hover:underline">Contact Us</Link>
                     </div>
                 </div>
+            </div>
+
+            <div className="bg-secondary text-white p-1 text-center">
+                <small>&copy; SAMO Hand Tools</small>
             </div>
         </footer>
     )
