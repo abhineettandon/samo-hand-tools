@@ -25,7 +25,10 @@ export default function Footer() {
                     
                     <div className="flex gap-4 items-center">
                         <FaPhone size={20} />
-                        <a href="tel:+91 94652 52993" className="hover:underline">+91 94652 52993</a>
+                        <div>
+                            <a href="tel:+91 62399 40093" className="hover:underline block">+91 62399 40093</a>
+                            <a href="tel:+91 62399 50093" className="hover:underline block">+91 62399 50093</a>
+                        </div>
                     </div>
                     
                     <div className="flex gap-4 items-center">
