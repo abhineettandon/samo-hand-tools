@@ -4,7 +4,7 @@ export const hoes: Product ={
     name: 'Hoes',
     slug: 'hoes',
     img: '/img/products/hoes/hoes.png',
-    varients: [
+    variants: [
         {
             name: 'SM-161 Hoe 3 Lbs.',
             img: '/img/products/hoes/sm-161.png',

@@ -2,7 +2,7 @@ export interface Product {
     name: string
     slug: string
     img: string
-    varients: ProductVariant[]
+    variants: ProductVariant[]
 }
 
 export interface ProductVariant {

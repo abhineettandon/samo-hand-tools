@@ -35,7 +35,7 @@ export default function Page({ params: { slug } }: Props) {
                 { product && <ProductNav activeSlug={product.slug} /> }
             
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-8">
-                    {product && product.varients.map((product, i) => <ProductDetailsCard product={product} key={i} />)}
+                    {product && product.variants.map((product, i) => <ProductDetailsCard product={product} key={i} />)}
                 </div>
             </div>
         </Fragment>

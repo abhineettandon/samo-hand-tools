@@ -4,7 +4,7 @@ export const slashers: Product =     {
     name: 'Slashers',
     slug: 'slashers',
     img: '/img/products/slashers/slashers.png',
-    varients: [
+    variants: [
         {
             name: 'SM-101 Straight Slasher',
             img: '/img/products/slashers/sm-101.png',

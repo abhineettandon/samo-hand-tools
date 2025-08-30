@@ -2,6 +2,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { FaEnvelope, FaLocationDot, FaPhone } from 'react-icons/fa6'
 
+import products from "@/app/_products"
+
 export default function Footer() {
     return (
         <footer className="bg-primary mt-8 w-full">
@@ -42,13 +44,11 @@ export default function Footer() {
                 <div className="flex flex-col gap-4 text-center">
                     <h4 className="text-lg font-bold">Products</h4>
                     <div className="flex flex-col gap-1">
-                        <Link href="/products" className="hover:underline">Combination Spanners</Link>
-                        <Link href="/products" className="hover:underline">Bill Hooks</Link>
-                        <Link href="/products" className="hover:underline">Digging Tools</Link>
-                        <Link href="/products" className="hover:underline">Hoes</Link>
-                        <Link href="/products" className="hover:underline">Rakes</Link>
-                        <Link href="/products" className="hover:underline">Scrapers</Link>
-                        <Link href="/products" className="hover:underline">Slashers</Link>
+                        {
+                            products.map(product => (
+                                <Link key={product.slug} href={`/products/${product.slug}`} className="hover:underline">{product.name}</Link>
+                            ))
+                        }
                     </div>
                 </div>
                 

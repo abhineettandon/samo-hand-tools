@@ -4,7 +4,7 @@ export const rakes: Product =     {
     name: 'Rakes',
     slug: 'rakes',
     img: '/img/products/rakes/rakes.png',
-    varients: [
+    variants: [
         {
             name: 'SM-148 Leaf Rake',
             img: '/img/products/rakes/sm-148.png',

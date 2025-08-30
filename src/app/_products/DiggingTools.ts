@@ -4,7 +4,7 @@ export const diggingTools: Product =     {
     name: 'Digging Tools',
     slug: 'digging-tools',
     img: '/img/products/digging-tools/digging-tools.png',
-    varients: [
+    variants: [
         {
             name: "SM-114 Digging Spade - Wooden Handle",
             img: '/img/products/digging-tools/sm-114.png',

@@ -4,7 +4,7 @@ export const billHooks: Product = {
     name: 'Bill Hooks',
     slug: 'bill-hooks',
     img: '/img/products/bill-hooks/bill-hooks.png',
-    varients: [
+    variants: [
         {
             name: 'SM-108 Sugar Cane Knife',
             img: '/img/products/bill-hooks/sm-108.png',

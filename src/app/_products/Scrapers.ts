@@ -4,7 +4,7 @@ export const scrapers: Product = {
     name: 'Scrapers',
     slug: 'scrapers',
     img: '/img/products/scrappers/scrapers.png',
-    varients: [
+    variants: [
         {
             name: 'SM-179 Curved Yard Scraper',
             img: '/img/products/scrappers/sm-179.png',
