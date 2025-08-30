@@ -57,7 +57,7 @@ export default function Footer() {
                     <div className="flex flex-col gap-1">
                         <Link href="/" className="hover:underline">Home</Link>
                         <Link href="/about" className="hover:underline">About</Link>
-                        <Link href="/" className="hover:underline">Products</Link>
+                        <Link href="/products" className="hover:underline">Products</Link>
                     </div>
                 </div>
             </div>
