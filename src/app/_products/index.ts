@@ -5,7 +5,7 @@ import { billHooks } from "./BillHooks";
 import { diggingTools } from "./DiggingTools";
 import { rakes } from "./Rakes";
 import { hoes } from "./Hoes";
-import { combinationSpanner } from "./CombinationSpanner";
+// import { combinationSpanner } from "./CombinationSpanner";
 import { hammers } from "./Hammers";
 
 const products: Product[] = [
@@ -14,7 +14,7 @@ const products: Product[] = [
   { ...diggingTools },
   { ...rakes },
   { ...hoes },
-  { ...combinationSpanner },
+  // { ...combinationSpanner },
   { ...hammers },
 ];
 
