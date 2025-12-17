@@ -18,20 +18,39 @@ export default function Home() {
         <div className="container flex flex-col justify-center items-center">
           <h1 className="text-center text-4xl font-bold">Our Products</h1>
           <div className="flex gap-4 max-w-full overflow-x-auto my-8 pb-4">
-            { products.map(product => (<ProductThumbnail key={product.slug} product={product} />)) }
+            {products.map((product) => (
+              <ProductThumbnail key={product.slug} product={product} />
+            ))}
           </div>
-          <Link className="bg-primary text-black py-2 px-8 rounded-full font-bold text-lg mt-4" href="/products">View All Prodcuts</Link>
+          <Link
+            className="bg-primary text-black py-2 px-8 rounded-full font-bold text-lg mt-4"
+            href="/products"
+          >
+            View All Prodcuts
+          </Link>
         </div>
       </div>
-      
+
       <div className="container py-8 text-center">
         <h1 className="text-4xl font-bold">About Us</h1>
-        <p className="mt-4 text-lg">Welcome to SAMO Hand Tools, your trusted partner in high-quality hand tools, proudly based in Jalandhar, Punjab, India. With a steadfast commitment to excellence, we specialize in the 100% export of premium hand tools, catering to a global clientele with precision and reliability. Our mission is to provide tools that not only meet but exceed the expectations of our customers worldwide.</p>
+        <p className="mt-4 text-lg">
+          Welcome to SAMO Hand Tools, your trusted partner in high-quality hand
+          tools, proudly based in Jalandhar, Punjab, India. With a steadfast
+          commitment to excellence, we specialize in the 100% export of premium
+          hand tools, catering to a global clientele with precision and
+          reliability. Our mission is to provide tools that not only meet but
+          exceed the expectations of our customers worldwide.
+        </p>
       </div>
 
       <div className="text-center">
-        <Link className="bg-secondary text-white py-2 px-8 rounded-full font-bold text-lg mt-4" href="/about">Know more</Link>
+        <Link
+          className="bg-secondary text-white py-2 px-8 rounded-full font-bold text-lg mt-4"
+          href="/about"
+        >
+          Know more
+        </Link>
       </div>
     </Fragment>
-  )
+  );
 }

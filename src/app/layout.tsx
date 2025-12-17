@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const font = Open_Sans({
-  subsets: ['latin']
+  subsets: ["latin"],
 });
 
 export default function RootLayout({
@@ -25,9 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Header />
-        <main className="flex-auto">
-          {children}
-        </main>
+        <main className="flex-auto">{children}</main>
         <Footer />
         <GoogleAnalytics gaId="G-JBD8CQ72M5" />
       </body>
